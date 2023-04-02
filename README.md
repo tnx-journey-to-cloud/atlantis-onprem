@@ -1,7 +1,7 @@
 # atlantis-onprem
 
 ### Update [atlantis.env](./atlantis.env)
-- ATLANTIS_ATLANTIS_URL=http://domain:4141 with your domain
+- ATLANTIS_ATLANTIS_URL="http://domain:4141" with your domain
 
 ### Update [AWS credentials](./.aws/credentials)
 - aws_access_key_id = <access_key>
