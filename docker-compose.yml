@@ -1,0 +1,13 @@
+version: '3'
+services:
+  atlantis:
+    image: ghcr.io/runatlantis/atlantis:v0.23.3
+    ports:
+    - 4141:4141
+    volumes:
+      - ./.aws/credentials:/home/atlantis/.aws/credentials
+      - ./config/:/home/atlantis/config/
+    # Contains the flags that atlantis uses in env var form
+    env_file:
+        - ./atlantis.env
+    restart: always
